@@ -95,6 +95,7 @@ pagination:
   {% endif %}
 
   <ul class="post-list">
+    {% if site.posts != blank -%}
     {% for post in paginator.posts %}
 
     {% if post.external_source == blank %}
@@ -161,6 +162,9 @@ pagination:
     </li>
 
     {% endfor %}
+    {%- else -%}
+      <p>No posts so far...</p>
+    {%- endif %}
   </ul>
 
   {% include pagination.html %}

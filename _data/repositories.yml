@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Nineteendo
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Nineteendo/Btml
+  - Nineteendo/comment-rulers
+  - Nineteendo/TI-84-Plus-programs
+  - Nineteendo/PVZ2tools
+  - Nineteendo/rush_hour
