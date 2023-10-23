@@ -2,8 +2,8 @@ github_users:
   - nineteendo
 
 github_repos:
-  - nineteendo/btml
   - nineteendo/comment-rulers
   - nineteendo/ti-84-plus-programs
   - nineteendo/pvz2tools
   - nineteendo/rush_hour
+  - nineteendo/tmlx
