@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Heverlee, Vlaams Brabant, België</p>
+    <p>Leuven, BE, Flemish Brabant</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts

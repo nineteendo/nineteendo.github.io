@@ -8,17 +8,33 @@
     "url": "https://nineteendo.github.io",
     "summary": "A Belgian-born computer scientist",
     "location": {
-      "address": "Middelweg 147",
-      "postalCode": "HEVERLEE 3001",
+      "address": "",
+      "postalCode": "",
       "city": "Leuven",
       "countryCode": "BE",
       "region": "Flemish Brabant"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "nineteendo",
+        "url": "https://github.com/nineteendo"
+      }
+    ]
   },
   "work": [],
   "volunteer": [],
   "education": [
+    {
+      "institution": "Heilig Hartinstituut, Heverlee, België",
+      "url": "https://hhscholen.be",
+      "area": "Greek-Mathematics 7",
+      "studyType": "High School",
+      "startDate": "2016-09-01",
+      "endDate": "2022-06-30",
+      "score": "",
+      "courses": []
+    },
     {
       "institution": "KU Leuven, Leuven, België",
       "url": "https://www.kuleuven.be/kuleuven",
@@ -33,7 +49,19 @@
   "awards": [],
   "certificates": [],
   "publications": [],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Basic",
+      "keywords": [
+        "Python",
+        "C#",
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "Dutch",

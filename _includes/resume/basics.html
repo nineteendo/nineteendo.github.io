@@ -1,10 +1,17 @@
 <table class="table table-cv table-sm table-borderless table-responsive table-cv-map">
-  {% assign skip_basics = "image,profiles,location" | split:"," %}
   {% for content in data[1] %}
-    {% if (content[1] == "") or (skip_basics contains content[0]) %}
+    {% if (content[0] == "image") or (content[1] == "") %}
       {% continue %}
     {% endif %}
 
+  {% if content[0] == "profiles" %}
+  {% for profile in content[1] %}
+  <tr>
+    <td class="p-1 pr-2 font-weight-bold"><b>{{ profile.network | capitalize }}</b></td>
+    <td class="p-1 pl-2 font-weight-light text"><a href="{{ profile.url }}" target="_blank" rel="noopener noreferrer">{{ profile.username }}</a></td>
+  </tr>
+  {% endfor %}
+  {% else %}
   <tr>
     <td class="p-1 pr-2 font-weight-bold"><b>{{ content[0] | capitalize }}</b></td>
     <td class="p-1 pl-2 font-weight-light text">
@@ -14,10 +21,19 @@
       <a href="mailto:{{ content[1] }}" target="_blank">{{ content[1] }}</a>
       {% elsif content[0] == "phone" %}
       <a href="tel:{{ content[1] }}">{{ content[1] }}</a>
+      {% elsif content[0] == "location" %}
+      {% assign list = "" | split: "," %}
+      {% for info in content[1] %}
+        {% if info[1] != "" %}
+          {% assign list = list | push: info[1] %}
+        {% endif %}
+      {% endfor %}
+      {{ list | join: ", " }}
       {% else %}
       {{ content[1] }}
       {% endif %}
     </td>
   </tr>
+  {% endif %}
   {% endfor %}
 </table>
